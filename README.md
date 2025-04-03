@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a [Next.js (ver 15.2.4)](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
@@ -35,4 +35,11 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
+---- Upgrades history ---
+01-April-2025
 Added two keys to the .env.local file (related to the uploadthing module/library)
+
+03-April-2025
+1. Routes created
+2. JSON file created and uploaded to uploadthing cloud
+3. Figuring out how to read the JSON file contents in my application.
