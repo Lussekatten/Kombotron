@@ -1,4 +1,4 @@
-.topNavigationContainer{
+.statsNavigationContainer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,12 +13,13 @@
     /* justify-content: center;
     align-items: center; */
 }
-.navLinksWrapper {
+.statsNavLinksWrapper {
+    background-color: rgb(204, 223, 223);
     display: flex;
-    flex: 1;
     justify-content: center;
-    gap: 2rem;
-    font-size: 1.2rem;
+    gap: 3rem;
+    font-size: 1rem;
+    padding: 1rem;
 }
 
 .siteLogo {
