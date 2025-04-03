@@ -43,3 +43,7 @@ Added two keys to the .env.local file (related to the uploadthing module/library
 1. Routes created
 2. JSON file created and uploaded to uploadthing cloud
 3. Figuring out how to read the JSON file contents in my application.
+4. I actually did not need the uploadthing module since I am only interested in READING data from a local JSON file.
+5. Test successfull. Now we have JSON data we can process.
+6. While stuck, I started to work on the menus, styling them with basic css.
+7. Basic styling "Top menu" and "Statistik sub menu" done.
