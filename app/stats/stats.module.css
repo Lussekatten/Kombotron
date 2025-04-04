@@ -10,14 +10,15 @@
 }
 .logoWrapper{
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
 }
 .statsNavLinksWrapper {
     background-color: rgb(204, 223, 223);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 3rem;
+    gap: 2vw;
     font-size: 1rem;
     padding: 1rem;
 }
