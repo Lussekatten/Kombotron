@@ -11,10 +11,12 @@ export default function TopNavMenu() {
                 <Link className={styles.siteLogo} href="/">Kombotron</Link>
             </div>
             <div className={styles.navLinksWrapper}>
-                <Link href="/">Hem</Link>
-                <Link href="/intro">Introduktion</Link>
-                <Link href="/stats">Statistik</Link>
-                <Link href="/create">Skapa system</Link>
+                <ul>
+                    <li><Link href="/">Hem</Link></li>
+                    <li><Link href="/intro">Introduktion</Link></li>
+                    <li><Link href="/stats">Statistik</Link></li>
+                    <li><Link href="/create">Skapa system</Link></li>
+                </ul>
             </div>
 
         </nav>

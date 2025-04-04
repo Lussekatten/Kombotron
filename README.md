@@ -47,3 +47,6 @@ Added two keys to the .env.local file (related to the uploadthing module/library
 5. Test successfull. Now we have JSON data we can process.
 6. While stuck, I started to work on the menus, styling them with basic css.
 7. Basic styling "Top menu" and "Statistik sub menu" done.
+
+04-April-2025
+1. Adjusted responsivity (a bit) for small displays
