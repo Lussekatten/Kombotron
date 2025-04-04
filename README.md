@@ -50,3 +50,6 @@ Added two keys to the .env.local file (related to the uploadthing module/library
 
 04-April-2025
 1. Adjusted responsivity (a bit) for small displays
+2. Filled the Intro page with some basic information
+3. I designed the layout a bit adding css.
+4. I added the footer component too (by mistake). Sometimes I get carried away, filled with inspiration, forgetting to create separate branches. I will try to remember that in the future.
