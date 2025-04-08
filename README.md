@@ -50,3 +50,14 @@ Added two keys to the .env.local file (related to the uploadthing module/library
 
 04-April-2025
 1. Adjusted responsivity (a bit) for small displays
+2. Worked on my sprint planning
+
+07-April-2025
+1. Finnished sprint planning for first week
+2. Gathered information about the winnings for a couple of weeks and mapped it to the JSON file "underlag-utdelningar.json" (see the data folder). In time I will add more data, but at the moment, it should be enough to create interesting information about the winnings such as:
+- What was the biggest win?
+- What was the average winning for 7-rätt?
+- What was the average winning for 6-rätt?
+- Number of weeks without a 7-rätt win (the more weeks without a win, the bigger the wining pot in the next round)
+etc.
+This data could be filtered for a certain period of time with a start date and an end date.
