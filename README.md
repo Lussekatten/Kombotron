@@ -61,3 +61,6 @@ Added two keys to the .env.local file (related to the uploadthing module/library
 - Number of weeks without a 7-rätt win (the more weeks without a win, the bigger the wining pot in the next round)
 etc.
 This data could be filtered for a certain period of time with a start date and an end date.
+
+08-April-2025
+1. Today we are going to add information about "tilläggsnummer" to our application. Best aproach would be to create this information in the JSON file "latest1000drawings.json".
