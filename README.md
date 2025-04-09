@@ -61,3 +61,11 @@ Added two keys to the .env.local file (related to the uploadthing module/library
 - Number of weeks without a 7-rätt win (the more weeks without a win, the bigger the wining pot in the next round)
 etc.
 This data could be filtered for a certain period of time with a start date and an end date.
+
+08-April-2025
+1. Today we are going to add information about "tilläggsnummer" to our application. Best aproach would be to create this information in the JSON file "latest1000drawings.json".
+2. For practical reasons, as a temporary solution, I chose to create a separate JSON file (see "additionalnumbers.json" in the data folder) with information about these additional 4 numbers.
+I just need to add more data, manually. At the moment the file only includes information from 1-jan-2025.
+For some reason, the date is missing. I need to investigate further, since I need the date info to be part of every JSON object.
+3. Fixed the date problem.
+4. Closing this issue. 
