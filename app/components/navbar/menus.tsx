@@ -31,6 +31,7 @@ export function StatsNavMenu() {
                 <Link href="/stats/numbers">Enskilda nummer</Link>
                 <Link href="/stats/pairofnumbers">Nummerpar</Link>
                 <Link href="/stats/grouping">Grupperingar</Link>
+                <Link href="/stats/winnings">Vinster</Link>
             </div>
         </nav>
     );
