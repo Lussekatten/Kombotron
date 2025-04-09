@@ -67,3 +67,5 @@ This data could be filtered for a certain period of time with a start date and a
 2. For practical reasons, as a temporary solution, I chose to create a separate JSON file (see "additionalnumbers.json" in the data folder) with information about these additional 4 numbers.
 I just need to add more data, manually. At the moment the file only includes information from 1-jan-2025.
 For some reason, the date is missing. I need to investigate further, since I need the date info to be part of every JSON object.
+3. Fixed the date problem.
+4. Closing this issue. 
