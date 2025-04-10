@@ -74,3 +74,7 @@ For some reason, the date is missing. I need to investigate further, since I nee
 1. Started on the presentation page for the "winnings page". This is actually a new page I am introducing. It was not planned from the start, but I find it interesting to create and present as it might be interesting to see for other people as well.
 2. So, a new route for the page, new layout using tables and new fonts.
 3. I had some problems with the average calculations (shown at the bottom of the page) but I got it working now. So, let's move on to another statistic page.
+
+10-April-2025
+1. Started on the presentation page for the "Statistik för enskilda nummer".
+2. Got some of the calculations wrong. Need more debugging.
