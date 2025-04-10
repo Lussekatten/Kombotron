@@ -13,7 +13,7 @@ export default function NumbersStatsPage() {
             <h2>Statistik för nummer 1</h2>
             <ul>
                 <li>Siffran 1 har kommit upp {numberOneCount} ggr. de senaste {stats.length} dragningarna.</li>
-                <li>Längsta frånvaro period hittad: {maxAbsence} dragningar</li>
+                <li>Längsta frånvaro period hittad: {maxAbsence} dragningar.</li>
                 <li>Mönstret de senaste 100 dragningarna är: </li>
             </ul>
         </div>

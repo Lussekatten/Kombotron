@@ -54,14 +54,14 @@ export default function getAverageStats(): number[] {
     return arr;
 }
 
-export function getStatsForNumber(nr: string='1'): number {
+export function getStatsForNumber(nr: string = '1'): number {
     let counter = 0;
     for (let i = 0; i < statsNumbers.length; i++) {
         //Split string into array of numbers;
         let arr: Array<string> = statsNumbers[i].combination.split(',');
         //Detect if number 1 is in there
         for (let j = 0; j < arr.length; j++) {
-            if (arr[j]==nr) {
+            if (arr[j] == nr) {
                 counter++;
             }
         }
@@ -71,31 +71,33 @@ export function getStatsForNumber(nr: string='1'): number {
 
 export function getAbsenceStatsForNumber(nr: string = '1'): number {
     //let counter = 0;
-    let maxAbsenceCounter: number = -1;
+    let maxAbsenceCounter: number = 0;
     let currentAbsenceCounter: number = 0;
-    let found : boolean = false;
-    let currentIndex : number = 0;
-    
+    let found: boolean = false;
+    let currentIndex: number = 0;
+
     for (let i = 0; i < statsNumbers.length; i++) {
         //Split string into array of numbers;
         let arr: Array<string> = statsNumbers[i].combination.split(',');
         //Detect if number 1 is in there
         for (let j = 0; j < arr.length; j++) {
-            if (arr[j]=="1") {
+            if (arr[j] == nr) {
                 found = true;
-                //Reset the absence counter
-                //Check which one is bigger and update the max value if needed
-                if (maxAbsenceCounter < currentAbsenceCounter) {
-                    maxAbsenceCounter = currentAbsenceCounter;
-                    currentIndex = i - maxAbsenceCounter;
-                    currentAbsenceCounter = 0;
-                }
+                break;
             }
-
-            if (!found) {
-                currentAbsenceCounter++;
-                found = false;
+        }
+        if (found) {
+            //Reset the absence counter
+            //Check which one is bigger and update the max value if needed
+            if (maxAbsenceCounter < currentAbsenceCounter) {
+                maxAbsenceCounter = currentAbsenceCounter;
+                currentIndex = i;
             }
+            found = false;
+            currentAbsenceCounter = 0;
+        }
+        else {
+            currentAbsenceCounter++;
         }
     }
     return maxAbsenceCounter;
