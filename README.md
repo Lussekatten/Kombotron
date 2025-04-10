@@ -68,4 +68,9 @@ This data could be filtered for a certain period of time with a start date and a
 I just need to add more data, manually. At the moment the file only includes information from 1-jan-2025.
 For some reason, the date is missing. I need to investigate further, since I need the date info to be part of every JSON object.
 3. Fixed the date problem.
-4. Closing this issue. 
+4. Closing this issue.
+
+09-April-2025
+1. Started on the presentation page for the "winnings page". This is actually a new page I am introducing. It was not planned from the start, but I find it interesting to create and present as it might be interesting to see for other people as well.
+2. So, a new route for the page, new layout using tables and new fonts.
+3. I had some problems with the average calculations (shown at the bottom of the page) but I got it working now. So, let's move on to another statistic page.

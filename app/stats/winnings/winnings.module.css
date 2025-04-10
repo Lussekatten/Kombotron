@@ -2,13 +2,15 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 5px;
 
-    h1{
-        font-size: 1.5rem;
+    h1 {
+        font-size: 1.3rem;
     }
 }
 
-.tables {
+.tablesMain,
+.tablesAverage {
 
     border: 1px solid black;
     overflow-x: auto;
@@ -16,12 +18,25 @@
     border-collapse: collapse;
     width: 100%;
 
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
 
     th,
     td {
         font-family: 'Courier New', Courier, monospace;
         font-size: .9rem;
-        padding: 15px;
+        padding: 3px;
         text-align: left;
     }
+
+    th {
+        background-color: rgb(53, 50, 50);
+        color: rgb(227, 234, 235);
+    }
+}
+
+.tablesAverage {
+    width: 20%;
+    table-layout: auto;
 }
