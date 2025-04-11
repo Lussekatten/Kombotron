@@ -79,4 +79,8 @@ For some reason, the date is missing. I need to investigate further, since I nee
 1. Started on the presentation page for the "Statistik för enskilda nummer".
 2. Got some of the calculations wrong. Need more debugging.
 3. I fixed the error now. Need to compute the pattern for the last 100 drawings
-and make a dropdown menu to select the number. The make the numbers on the page change acording to the number selected in the dropdown.
+and make a dropdown menu to select the number. Then make the numbers on the page change acording to the number selected in the dropdown.
+
+11-April-2025
+1. Working on storing the absence pattern for a certain number. 
+2. The pattern for a certain number is now shown. But it would have been much cooler to show a diagram instead of a long series of numbers. Adding that feature as a new issue.

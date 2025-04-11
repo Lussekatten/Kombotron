@@ -102,3 +102,46 @@ export function getAbsenceStatsForNumber(nr: string = '1'): number {
     }
     return maxAbsenceCounter;
 }
+
+export function getAbsencePatternForNumber(nr: string = '1'): string {
+    //let counter = 0;
+    let maxAbsenceCounter: number = 0;
+    let currentAbsenceCounter: number = 0;
+    let found: boolean = false;
+    let currentIndex: number = 0;
+    let counterSkip: number = 0;
+    let absencePattern : string = '';
+
+    for (let i = 0; i < statsNumbers.length; i++) {
+        //Skip until 100 left
+        if (counterSkip >= i) {
+            //Split string into array of numbers;
+            let arr: Array<string> = statsNumbers[i].combination.split(',');
+            //Detect if number 1 is in there
+            for (let j = 0; j < arr.length; j++) {
+                if (arr[j] == nr) {
+                    found = true;
+                    break;
+                }
+            }
+            if (found) {
+                //Reset the absence counter
+                //Check which one is bigger and update the max value if needed
+                if (maxAbsenceCounter < currentAbsenceCounter) {
+                    maxAbsenceCounter = currentAbsenceCounter;
+                    currentIndex = i;
+                }
+                //Add the new absence period to the pattern
+                absencePattern +=currentAbsenceCounter;
+                absencePattern += ' ';
+                found = false;
+                currentAbsenceCounter = 0;
+            }
+            else {
+                currentAbsenceCounter++;
+            }
+        }
+        counterSkip++;
+    }
+    return absencePattern;
+}
