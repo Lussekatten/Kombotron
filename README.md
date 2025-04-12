@@ -89,3 +89,4 @@ and make a dropdown menu to select the number. Then make the numbers on the page
 1. I just installed Chart.js along with its React wrapper, react-chartjs-2 in order to produce a bar chart from the numbers I produce. I hope it is simple enough to use.
 2. A bar chart is now implemented and styled using the Chart.js component (wrapped by react-chartjs-2). It worked well enough.
 3. I stil need to add a dropbox where the user selects the number he wants to see the stats for. But I will get to it later.
+4. Dropdown functionality implemented!

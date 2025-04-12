@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { StatsNavMenu } from "@/app/components/navbar/menus";
 import stats from '@/data/latest1000drawings.json';
 import styles from "./numbers.module.css"
@@ -14,46 +14,59 @@ import BarChart from "@/app/components/barchart/BarChart";
 // Register chart.js components
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-// Type for the data options
-type DataOptions = {
-    option1: string;
-    option2: string;
-    option3: string;
-};
+let data: string;
 
 const NumbersStatsPage: React.FC = () => {
-    // Define the different data strings (example data for demonstration)
-    const dataOptions: DataOptions = {
-        option1: "10 20 30 40 50",
-        option2: "15 25 35 45 55",
-        option3: "5 15 25 35 45",
-    };
-    // State for selected data string and dropdown selection
-    const [selectedData, setSelectedData] = useState<string>(dataOptions.option1);
+    const [selectedOption, setSelectedOption] = useState<string>('1');
+    const [Data, setData] = useState<string>('1');
+    // Fetch and parse data when dropdown changes
+    const numberOneCount = getStatsForNumber(selectedOption);
+    const maxAbsence = getAbsenceStatsForNumber(selectedOption);
+    const absencePattern = getAbsencePatternForNumber(selectedOption);
+    useEffect(() => {
+        const loadData = async () => {
+            try {
+                const result = await getAbsencePatternForNumber(selectedOption);
+                setData(result);
+            } catch (err) {
+                console.error('Data fetch error:', err);
+            }
+        };
 
-    // Handle dropdown change
-    const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        const selectedOption = event.target.value as keyof DataOptions; // Type assertion
-        setSelectedData(dataOptions[selectedOption]);
-    };
 
-    const numberOneCount = getStatsForNumber('3');
-    const maxAbsence = getAbsenceStatsForNumber('3');
-    const absencePattern = getAbsencePatternForNumber('3');
+        loadData();
+    }, [selectedOption]);
+
 
     return (
         <div className={styles.allWrapper}>
             <StatsNavMenu />
-            
-            <h1>Statistik om enskilda nummer</h1>
-            <h2>Statistik för nummer 1</h2>
+
+            <h1>Statistik för enskilda nummer</h1>
+            <div>
+                <label htmlFor="NumberSelector">Välj ett nummer:</label>
+                <select id='NumberSelector' name='NumberSelector'
+                    value={selectedOption}
+                    onChange={(e) => setSelectedOption(e.target.value)}
+                >
+                    {Array.from({ length: 35 }, (_, i) => {
+    const value = (i + 1).toString();
+    return (
+      <option key={value} value={value}>
+        {value}
+      </option>
+    );
+  })}
+                </select>
+            </div>
+            <h2>Statistik för nummer {selectedOption}</h2>
             <ul>
-                <li>Siffran 1 har kommit upp {numberOneCount} ggr. de senaste {stats.length} dragningarna.</li>
-                <li>Längsta frånvaro period hittad: {maxAbsence} dragningar.</li>
-                <li>Mönstret de senaste 100 dragningarna är: {absencePattern}</li>
+                <li>Närvaro-frekvens: Siffran 1 har kommit upp <b>{numberOneCount} ggr.</b> de senaste {stats.length} dragningarna.</li>
+                <li><b>Längsta frånvaro</b> period: <b>{maxAbsence}</b> dragningar.</li>
+                <li><b>Frånvaro</b>-mönstret de senaste 100 dragningarna: {absencePattern}</li>
             </ul>
-            <div style={{ height: '550px' }}>
-                <BarChart dataString={absencePattern} number='3'/>
+            <div style={{ height: '510px' }}>
+                <BarChart dataString={Data} number={selectedOption} />
             </div>
         </div >
     );
