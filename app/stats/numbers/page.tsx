@@ -61,7 +61,7 @@ const NumbersStatsPage: React.FC = () => {
             </div>
             <h2>Statistik för nummer {selectedOption}</h2>
             <ul>
-                <li>Närvaro-frekvens: Siffran 1 har kommit upp <b>{numberOneCount} ggr.</b> de senaste {stats.length} dragningarna.</li>
+                <li>Närvaro-frekvens: Siffran {selectedOption} har kommit upp <b>{numberOneCount} ggr.</b> de senaste {stats.length} dragningarna.</li>
                 <li><b>Längsta frånvaro</b> period: <b>{maxAbsence}</b> dragningar.</li>
                 <li><b>Frånvaro</b>-mönstret de senaste 100 dragningarna: {absencePattern}</li>
             </ul>

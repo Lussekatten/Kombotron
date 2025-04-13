@@ -17,13 +17,13 @@ const BarChart: React.FC<BarChartProps> = ({ dataString, number }) => {
 
   // Define the chart data
   const data = {
-    labels: dataArray.map((_, index) => `Längd ${index + 1}`), // Label each bar with "Label 1", "Label 2", etc.
+    labels: dataArray.map((_, index) => `I-${index + 1}`), // Label each bar with "I-1", "I-2", etc.
     datasets: [
       {
         label: 'Siffran - ' + number,
         data: dataArray,
-        backgroundColor: 'rgba(75, 192, 192, 0.2)',
-        borderColor: 'rgba(75, 192, 192, 1)',
+        backgroundColor: 'rgb(118, 56, 121)',
+        borderColor: 'rgb(23, 7, 24)',
         borderWidth: 1,
       },
     ],
