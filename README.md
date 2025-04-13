@@ -93,4 +93,5 @@ and make a dropdown menu to select the number. Then make the numbers on the page
 
 13-April-2025
 1. Updated the JSON files. No need to make a new branch for this.
-
+2. I will add to the information for the stats page (how it should be used).
+3. Some information and design added. More remains to be filled for completion.
