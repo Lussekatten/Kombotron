@@ -1,0 +1,25 @@
+.allWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+
+    h1 {
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .chart {
+        canvas {
+            width: 400px;
+            height: 50%;
+        }
+    }
+    li{
+        font-size: 0.9rem;
+    }
+}

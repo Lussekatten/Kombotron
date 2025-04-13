@@ -1,4 +1,5 @@
-import stats from '@/data/underlag-utdelningar.json';
+import statsWinnings from '@/data/underlag-utdelningar.json';
+import statsNumbers from '@/data/latest1000drawings.json';
 
 export default function getAverageStats(): number[] {
     let arr: Array<number> = [0, 0, 0];
@@ -16,30 +17,30 @@ export default function getAverageStats(): number[] {
     let winnersSix: number = 0;
     let avgSix: number = 0;
     let thirdWinAsString: string;
-    
-    for (let index = 0; index < stats.length; index++) {
-        firstWinAsString = stats[index]['7-rätt-vinst']; //number with a dot
+
+    for (let index = 0; index < statsWinnings.length; index++) {
+        firstWinAsString = statsWinnings[index]['7-rätt-vinst']; //number with a dot
         if (firstWinAsString.length == 1) {
             //it means the win is "0"
             arr[0] = 0;
         }
         else {
             var firstWinAsNumber: number = +firstWinAsString;
-            var firstWinWinners: number = +stats[index]['7-rätt-antal'];
+            var firstWinWinners: number = +statsWinnings[index]['7-rätt-antal'];
             let tempSum = firstWinAsNumber * firstWinWinners;
             winnersSeven += firstWinWinners;
             sumSeven += tempSum;
         }
-        secondWinAsString = stats[index]['6-plus-vinst']; //number with a dot
+        secondWinAsString = statsWinnings[index]['6-plus-vinst']; //number with a dot
         var secondWinAsNumber: number = +secondWinAsString;
-        var secondWinWinners: number = +stats[index]['6-plus-antal'];
+        var secondWinWinners: number = +statsWinnings[index]['6-plus-antal'];
         winnersSixPlusOne += secondWinWinners;
         let tempSum = secondWinAsNumber * secondWinWinners;
         sumSixPlusOne += tempSum;
 
-        thirdWinAsString = stats[index]['6-rätt-vinst']; //number with a dot
+        thirdWinAsString = statsWinnings[index]['6-rätt-vinst']; //number with a dot
         var thirdWinAsNumber: number = +thirdWinAsString;
-        var thirdWinWinners: number = +stats[index]['6-rätt-antal'];
+        var thirdWinWinners: number = +statsWinnings[index]['6-rätt-antal'];
         winnersSix += thirdWinWinners;
         let temp3Sum = thirdWinAsNumber * thirdWinWinners;
         sumSix += temp3Sum;
@@ -51,4 +52,96 @@ export default function getAverageStats(): number[] {
     arr[1] = avgSixPlusOne;
     arr[2] = avgSix;
     return arr;
+}
+
+export function getStatsForNumber(nr: string = '1'): number {
+    let counter = 0;
+    for (let i = 0; i < statsNumbers.length; i++) {
+        //Split string into array of numbers;
+        let arr: Array<string> = statsNumbers[i].combination.split(',');
+        //Detect if number 1 is in there
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] == nr) {
+                counter++;
+            }
+        }
+    }
+    return counter;
+}
+
+export function getAbsenceStatsForNumber(nr: string = '1'): number {
+    //let counter = 0;
+    let maxAbsenceCounter: number = 0;
+    let currentAbsenceCounter: number = 0;
+    let found: boolean = false;
+    let currentIndex: number = 0;
+
+    for (let i = 0; i < statsNumbers.length; i++) {
+        //Split string into array of numbers;
+        let arr: Array<string> = statsNumbers[i].combination.split(',');
+        //Detect if number 1 is in there
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] == nr) {
+                found = true;
+                break;
+            }
+        }
+        if (found) {
+            //Reset the absence counter
+            //Check which one is bigger and update the max value if needed
+            if (maxAbsenceCounter < currentAbsenceCounter) {
+                maxAbsenceCounter = currentAbsenceCounter;
+                currentIndex = i;
+            }
+            found = false;
+            currentAbsenceCounter = 0;
+        }
+        else {
+            currentAbsenceCounter++;
+        }
+    }
+    return maxAbsenceCounter;
+}
+
+export function getAbsencePatternForNumber(nr: string = '1'): string {
+    //let counter = 0;
+    let maxAbsenceCounter: number = 0;
+    let currentAbsenceCounter: number = 0;
+    let found: boolean = false;
+    let currentIndex: number = 0;
+    let counterSkip: number = 0;
+    let absencePattern : string = '';
+
+    for (let i = 0; i < statsNumbers.length; i++) {
+        //Skip until 100 left
+        if (counterSkip >= i) {
+            //Split string into array of numbers;
+            let arr: Array<string> = statsNumbers[i].combination.split(',');
+            //Detect if number 1 is in there
+            for (let j = 0; j < arr.length; j++) {
+                if (arr[j] == nr) {
+                    found = true;
+                    break;
+                }
+            }
+            if (found) {
+                //Reset the absence counter
+                //Check which one is bigger and update the max value if needed
+                if (maxAbsenceCounter < currentAbsenceCounter) {
+                    maxAbsenceCounter = currentAbsenceCounter;
+                    currentIndex = i;
+                }
+                //Add the new absence period to the pattern
+                absencePattern +=currentAbsenceCounter;
+                absencePattern += ' ';
+                found = false;
+                currentAbsenceCounter = 0;
+            }
+            else {
+                currentAbsenceCounter++;
+            }
+        }
+        counterSkip++;
+    }
+    return absencePattern;
 }

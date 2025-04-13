@@ -74,3 +74,19 @@ For some reason, the date is missing. I need to investigate further, since I nee
 1. Started on the presentation page for the "winnings page". This is actually a new page I am introducing. It was not planned from the start, but I find it interesting to create and present as it might be interesting to see for other people as well.
 2. So, a new route for the page, new layout using tables and new fonts.
 3. I had some problems with the average calculations (shown at the bottom of the page) but I got it working now. So, let's move on to another statistic page.
+
+10-April-2025
+1. Started on the presentation page for the "Statistik för enskilda nummer".
+2. Got some of the calculations wrong. Need more debugging.
+3. I fixed the error now. Need to compute the pattern for the last 100 drawings
+and make a dropdown menu to select the number. Then make the numbers on the page change acording to the number selected in the dropdown.
+
+11-April-2025
+1. Working on storing the absence pattern for a certain number. 
+2. The pattern for a certain number is now shown. But it would have been much cooler to show a diagram instead of a long series of numbers. Adding that feature as a new issue.
+
+11-April-2025
+1. I just installed Chart.js along with its React wrapper, react-chartjs-2 in order to produce a bar chart from the numbers I produce. I hope it is simple enough to use.
+2. A bar chart is now implemented and styled using the Chart.js component (wrapped by react-chartjs-2). It worked well enough.
+3. I stil need to add a dropbox where the user selects the number he wants to see the stats for. But I will get to it later.
+4. Dropdown functionality implemented!

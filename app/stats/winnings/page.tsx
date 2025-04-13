@@ -8,50 +8,56 @@ export default function WinningsStatsPage() {
     const formatter = new Intl.NumberFormat('sv-SE', {
         style: 'currency',
         currency: 'SEK',
-      });
+    });
     return (
         <>
             <StatsNavMenu />
             <div className={styles.tblResp}>
                 <h1>Vinststatistik för 2025 (senaste dragningar)</h1>
                 <table className={styles.tablesMain}>
-                    <tr>
-                        <th>Datum</th>
-                        <th>Dragning</th>
-                        <th>Styck</th>
-                        <th>7-rätt</th>
-                        <th>Styck</th>
-                        <th>6-rätt + 1</th>
-                        <th>Styck</th>
-                        <th>6-rätt</th>
-                    </tr>
-                    {stats.map(win =>
+                    <thead>
                         <tr>
-                            <td>{win.Datum}</td>
-                            <td>{win.Dragning}</td>
-                            <td>{win["7-rätt-antal"]}</td>
-                            <td>{formatter.format(+win["7-rätt-vinst"])}</td>
-                            <td>{win["6-plus-antal"]}</td>
-                            <td>{formatter.format(+win["6-plus-vinst"])}</td>
-                            <td>{win["6-rätt-antal"]}</td>
-                            <td>{formatter.format(+win["6-rätt-vinst"])}</td>
+                            <th>Datum</th>
+                            <th>Dragning</th>
+                            <th>Styck</th>
+                            <th>7-rätt</th>
+                            <th>Styck</th>
+                            <th>6-rätt + 1</th>
+                            <th>Styck</th>
+                            <th>6-rätt</th>
                         </tr>
-                    )}
+                    </thead>
+                    <tbody>
+                        {stats.map(win =>
+                            <tr key={win.Id}>
+                                <td>{win.Datum}</td>
+                                <td>{win.Dragning}</td>
+                                <td>{win["7-rätt-antal"]}</td>
+                                <td>{formatter.format(+win["7-rätt-vinst"])}</td>
+                                <td>{win["6-plus-antal"]}</td>
+                                <td>{formatter.format(+win["6-plus-vinst"])}</td>
+                                <td>{win["6-rätt-antal"]}</td>
+                                <td>{formatter.format(+win["6-rätt-vinst"])}</td>
+                            </tr>
+                        )}
+                    </tbody>
                 </table>
+                <h3>Genomsnittliga värden:</h3>
                 <table className={styles.tablesAverage}>
-                    <h3>Genomsnittliga värden:</h3>
-                    <tr>
-                        <td>7-rätt</td>
-                        <td>{formatter.format(+averages[0])}</td>
-                    </tr>
-                    <tr>
-                        <td>6-rätt + 1</td>
-                        <td>{formatter.format(+averages[1])}</td>
-                    </tr>
-                    <tr>
-                        <td>6-rätt</td>
-                        <td>{formatter.format(+averages[2])}</td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>7-rätt</td>
+                            <td>{formatter.format(+averages[0])}</td>
+                        </tr>
+                        <tr>
+                            <td>6-rätt + 1</td>
+                            <td>{formatter.format(+averages[1])}</td>
+                        </tr>
+                        <tr>
+                            <td>6-rätt</td>
+                            <td>{formatter.format(+averages[2])}</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </>
