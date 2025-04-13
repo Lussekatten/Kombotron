@@ -264,5 +264,27 @@
 "6-plus-vinst": "24407",
 "6-rätt-antal": "37",
 "6-rätt-vinst": "3848"
+},
+{
+"Id":"25",
+"Datum": "2025-04-12",
+"Dragning": "Lotto 1",
+"7-rätt-antal": "0",
+"7-rätt-vinst": "0",
+"6-plus-antal": "14",
+"6-plus-vinst": "42587",
+"6-rätt-antal": "119",
+"6-rätt-vinst": "2918"
+},
+{
+"Id":"26",
+"Datum": "2025-04-12",
+"Dragning": "Lotto 2",
+"7-rätt-antal": "0",
+"7-rätt-vinst": "0",
+"6-plus-antal": "24",
+"6-plus-vinst": "21193",
+"6-rätt-antal": "141",
+"6-rätt-vinst": "2104"
 }
 ]
