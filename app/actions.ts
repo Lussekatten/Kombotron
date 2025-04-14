@@ -142,6 +142,10 @@ export function getAbsencePatternForNumber(nr: string = '1'): string {
             }
         }
         counterSkip++;
+        //Save the last absence period as well
+        if (i == statsNumbers.length -1) {
+            absencePattern +=currentAbsenceCounter;
+        }
     }
     return absencePattern;
 }

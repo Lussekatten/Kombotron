@@ -93,4 +93,8 @@ and make a dropdown menu to select the number. Then make the numbers on the page
 
 13-April-2025
 1. Updated the JSON files. No need to make a new branch for this.
-
+2. I will add to the information for the stats page (how it should be used).
+3. Some information and design added. More remains to be filled for completion.
+4. I also corrected 1 error. The last value in the chart was not computed at all. Now
+it is calculated and added as the last number to the string array.
+5. The general information in the stats page is detailed enough now. Closing this issue.

@@ -1,3 +1,8 @@
+.allWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .statsNavigationContainer{
     display: flex;
     justify-content: center;
@@ -28,4 +33,26 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
+}
+
+.infoContents{
+    padding-top: 10px;
+    padding-left: 10px;
+    max-width: 80vw;
+    h1{
+        font-size: x-large;
+        margin-bottom: 10px;
+    }
+    h2{
+        margin-top: 25px;
+        font-size: medium;
+    }
+    p,li{
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+    ul{
+        padding-left: 25px;
+        margin-bottom: 10px;
+    }
 }
