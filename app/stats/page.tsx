@@ -46,13 +46,27 @@ export default function StatsPage() {
                         </li>
                         <li><b>Begränsad följd</b> - Om ett och samma nummer dyker up i 3 konsekutiva dragningar är det ytterst osannolikt att
                             numret kommer upp även en fjärde gång. Att välja bort ett nummer inför nästa dragning är ett sätt att minimera antalet
-                            lovande kombinatiner som man vill ha kvar.
+                            kombinatiner som man vill ha kvar (de mest lovande).
                         </li>
-                        <li><b>Grupperingar</b> - Av intresse kan vara även hur grupperna av intilliggande siffror dyker upp. Detta kan man följa
-                            i undermenyn "Grupperingar". Att välja bort kombinationer med grupperingar större än 2 (t.ex. 2-3-4, eller 13-14-15) är
-                            ett annat sätt att sålla bort oönskade kombinationer.
+                        <li><b>Grupperingar</b> - Av intresse kan vara även hur grupperna av konsekutiva siffror dyker upp. Detta kan man följa
+                            i undermenyn "Grupperingar". Att välja bort kombinationer med grupperingar större än 2 (t.ex. 2-3-4, eller 12-13-14-15) är
+                            ett annat sätt att sålla bort oönskade kombinationer. Procentsatserna talar sitt tydliga språk. Chansen att en lottorad har 3
+                            nummer i följd är 10,3% medan chansen att få en lottorad med 4 nummer i följd är så lite som 1,16%. Ett par konsekutiva siffror
+                            dyker däremot upp rätt ofta, i nära 70% av fallen. Därför rekommenderar jag att man inte bygger system med grupper av tre
+                            eller fler siffror i rad.
+                        </li>
+                        <li><b>Omfång</b> - Jag har även undersökt hur kombinationerna ser ut med hänsyn till avstånd/spannet mellan lägsta siffran och högsta
+                            siffran i kombinationen. Om kombinationen är t.ex. 1-2-14-17-21-23-31 så är avståndet 30 (31 minus 1 blir 30).
+                            Jag kunde inte utesluta något "mönster" (dvs. filtrera bort osannolika kombinationer) eftersom fördelningen mellan kombinationer med
+                            kort spann och de med långt spann blir så förbluffande jämn.
                         </li>
                     </ul>
+                    <h2>Slutsatser</h2>
+                    <p>När du bygger system med hjälp av vår sajt, gör så här:<br />
+                        1. Välj 3 olika siffror som du vill ha med i alla dina kombinationer.<br />
+                        2. Kör med storlek 2 på grupperingar.<br />
+                        3. Ett system på 35-45 rader kommer att byggas upp som garanterar dig minst 1 rad med 5-rätt, men oftast blir det fler.
+                    </p>
                 </div>
             </main>
         </>

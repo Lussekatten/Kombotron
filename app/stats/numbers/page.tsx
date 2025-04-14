@@ -33,7 +33,6 @@ const NumbersStatsPage: React.FC = () => {
             }
         };
 
-
         loadData();
     }, [selectedOption]);
 
@@ -50,13 +49,13 @@ const NumbersStatsPage: React.FC = () => {
                     onChange={(e) => setSelectedOption(e.target.value)}
                 >
                     {Array.from({ length: 35 }, (_, i) => {
-    const value = (i + 1).toString();
-    return (
-      <option key={value} value={value}>
-        {value}
-      </option>
-    );
-  })}
+                        const value = (i + 1).toString();
+                        return (
+                            <option key={value} value={value}>
+                                {value}
+                            </option>
+                        );
+                    })}
                 </select>
             </div>
             <h2>Statistik för nummer {selectedOption}</h2>

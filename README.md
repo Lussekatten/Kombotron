@@ -101,3 +101,4 @@ it is calculated and added as the last number to the string array.
 
 14-April-2025
 1. I am working on stats for groups of numbers. The purpose is to see how often the numbers are bunched up together (or not).
+2. It turned out I had more information to share on the stats page, so I just went with the flow (and let the inspiration guide me). :P
