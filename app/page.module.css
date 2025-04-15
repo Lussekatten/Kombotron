@@ -1,14 +1,82 @@
 .page {
-    height: 70%;
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 0;
-    display: flex;
     align-items: center;
     justify-content: center;
+    height: auto;
 
-    main{
-        img{
-            /* border: 1px solid salmon; */
+    .myImg{
+        transform: rotate(20deg);
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+
+        /* Cards styling */
+        :nth-child(1) {
+            transform: rotate(8deg);
+            background-image: url('/kvitto-1.jpg');
         }
+
+        :nth-child(2) {
+            transform: rotate(4deg);
+            background-image: url('/kvitto-2.jpg');
+        }
+
+        :nth-child(3) {
+            background-image: url('/kvitto-1.jpg');
+        }
+
+        :nth-child(4) {
+            transform: rotate(-4deg);
+            background-image: url('/kvitto-2.jpg');
+        }
+
+        :nth-child(5) {
+            transform: rotate(-8deg);
+            background-image: url('/kvitto-1.jpg');
+        }
+
+    }
+
+    /* Here goes the hover effect */
+    :hover :nth-child(1) {
+        transform: rotate(20deg);
+    }
+
+    :hover :nth-child(2) {
+        transform: rotate(10deg);
+    }
+
+    :hover :nth-child(3) {
+        transform: rotate(-0deg);
+    }
+
+    :hover :nth-child(4) {
+        transform: rotate(-10deg);
+    }
+
+    :hover :nth-child(5) {
+        transform: rotate(-20deg);
+    }
+
+    .cards {
+        width: 30vw;
+        padding-left: 9vw;
+        height: auto;
+
+        .card {
+            position: absolute;
+            width: 260px;
+            height: 415px;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+            transform-origin: center 1000px;
+            transition: all 0.9s linear;
+
+        }
+
     }
 }
