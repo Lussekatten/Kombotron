@@ -5,14 +5,21 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
-          <Image
-            src="/bollar_01.png"
-            alt="numbered balls"
-            width={612}
-            height={254}
-          // priority
-          />
+      <div>
+        <Image className={styles.myImg}
+          src="/bollar_01.png"
+          alt="numbered balls"
+          width={612}
+          height={254}
+        // priority
+        />
+      </div>
+      <main className={`${styles.main} ${styles.cards}`}>
+        <article className={styles.card}></article>
+        <article className={styles.card}></article>
+        <article className={styles.card}></article>
+        <article className={styles.card}></article>
+        <article className={styles.card}></article>
       </main>
     </div>
   );
