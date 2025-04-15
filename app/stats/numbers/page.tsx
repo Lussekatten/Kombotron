@@ -40,35 +40,35 @@ const NumbersStatsPage: React.FC = () => {
     return (
         <>
             <StatsNavMenu />
-        <div className={styles.allWrapper}>
+            <div className={styles.allWrapper}>
 
-            <h1>Statistik för enskilda nummer</h1>
-            <div>
-                <label htmlFor="NumberSelector">Välj ett nummer:</label>
-                <select id='NumberSelector' name='NumberSelector'
-                    value={selectedOption}
-                    onChange={(e) => setSelectedOption(e.target.value)}
-                >
-                    {Array.from({ length: 35 }, (_, i) => {
-                        const value = (i + 1).toString();
-                        return (
-                            <option key={value} value={value}>
-                                {value}
-                            </option>
-                        );
-                    })}
-                </select>
-            </div>
-            <h2>Statistik för nummer {selectedOption}</h2>
-            <ul>
-                <li>Närvaro-frekvens: Siffran {selectedOption} har kommit upp <b>{numberOneCount} ggr.</b> de senaste {stats.length} dragningarna.</li>
-                <li><b>Längsta frånvaro</b> period: <b>{maxAbsence}</b> dragningar.</li>
-                <li><b>Frånvaro</b>-mönstret de senaste dragningarna: {absencePattern}</li>
-            </ul>
-            <div style={{ height: '510px' }}>
-                <BarChart dataString={Data} number={selectedOption} />
-            </div>
-        </div >
+                <h1>Statistik för enskilda nummer</h1>
+                <div>
+                    <label htmlFor="NumberSelector">Välj ett nummer:</label>
+                    <select id='NumberSelector' name='NumberSelector'
+                        value={selectedOption}
+                        onChange={(e) => setSelectedOption(e.target.value)}
+                    >
+                        {Array.from({ length: 35 }, (_, i) => {
+                            const value = (i + 1).toString();
+                            return (
+                                <option key={value} value={value}>
+                                    {value}
+                                </option>
+                            );
+                        })}
+                    </select>
+                </div>
+                <h2>Statistik för nummer {selectedOption}</h2>
+                <ul>
+                    <li>Närvaro-frekvens: Siffran {selectedOption} har kommit upp <b>{numberOneCount} ggr.</b> de senaste {stats.length} dragningarna.</li>
+                    <li><b>Längsta frånvaro</b> period: <b>{maxAbsence}</b> dragningar.</li>
+                    <li><b>Frånvaro</b>-mönstret de senaste dragningarna: {absencePattern}</li>
+                </ul>
+                <div style={{ height: '510px' }}>
+                    <BarChart dataString={Data} number={selectedOption} />
+                </div>
+            </div >
         </>
     );
 }

@@ -109,53 +109,54 @@ export function getAbsencePatternForNumber(nr: string = '1'): string {
     let currentAbsenceCounter: number = 0;
     let found: boolean = false;
     let counterSkip: number = 0;
-    let absencePattern : string = '';
+    let absencePattern: string = '';
 
     for (let i = 0; i < statsNumbers.length; i++) {
-            //Split string into array of numbers;
-            let arr: Array<string> = statsNumbers[i].combination.split(',');
-            //Detect if number 1 is in there
-            for (let j = 0; j < arr.length; j++) {
-                if (arr[j] == nr) {
-                    found = true;
-                    break;
-                }
+        //Split string into array of numbers;
+        let arr: Array<string> = statsNumbers[i].combination.split(',');
+        //Detect if number 1 is in there
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] == nr) {
+                found = true;
+                break;
             }
-            if (found) {
-                //Reset the absence counter
-                //Check which one is bigger and update the max value if needed
-                if (maxAbsenceCounter < currentAbsenceCounter) {
-                    maxAbsenceCounter = currentAbsenceCounter;
-                }
-                //Add the new absence period to the pattern
-                absencePattern +=currentAbsenceCounter;
-                absencePattern += ' ';
-                found = false;
-                currentAbsenceCounter = 0;
+        }
+        if (found) {
+            //Reset the absence counter
+            //Check which one is bigger and update the max value if needed
+            if (maxAbsenceCounter < currentAbsenceCounter) {
+                maxAbsenceCounter = currentAbsenceCounter;
             }
-            else {
-                currentAbsenceCounter++;
-            }
+            //Add the new absence period to the pattern
+            absencePattern += currentAbsenceCounter;
+            absencePattern += ' ';
+            found = false;
+            currentAbsenceCounter = 0;
+        }
+        else {
+            currentAbsenceCounter++;
+        }
         //Save the last absence period as well
-        if (i == statsNumbers.length -1) {
-            absencePattern +=currentAbsenceCounter;
+        if (i == statsNumbers.length - 1) {
+            absencePattern += currentAbsenceCounter;
         }
     }
     return absencePattern;
 }
 
 export function getGroupingStats(): string[] {
-    let arr: Array<number> = [0, 0, 0];
+    let arr: Array<string> = [];
     let sumSeven: number = 0;
     let winnersSeven: number = 0;
-    let counterSkip: number = 0;
-    let absencePattern : string = '';
+    let counterSkip: number = statsNumbers.length - 10;
+    let absencePattern: string = '';
 
     for (let i = 0; i < statsNumbers.length; i++) {
-        //Skip until 100 left
-        if (counterSkip >= i) {
-        
+        //Skip until 100 left, when i becomes larger or equal to counterSkip
+        if (i >= counterSkip) {
+            //unprocessed
+            arr[i] = statsNumbers[i].combination;
         }
     }
-    return ["1,2"];
+    return arr;
 }
