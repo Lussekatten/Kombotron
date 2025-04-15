@@ -103,3 +103,5 @@ it is calculated and added as the last number to the string array.
 1. I am working on stats for groups of numbers. The purpose is to see how often the numbers are bunched up together (or not).
 2. It turned out I had more information to share on the stats page, so I just went with the flow (and let the inspiration guide me). :P
 3. Fixed some layout issues with the winnings table(s). I prevented the contents from wrapping and also prevented the footer from covering the bottom table.
+4. Grouping functionality implemented. Strange that I could not trim properly the comma at the end.
+I tried in vain.

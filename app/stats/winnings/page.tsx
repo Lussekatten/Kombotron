@@ -29,9 +29,9 @@ export default function WinningsStatsPage() {
                     </thead>
                     <tbody>
                         {stats.map(win =>
-                            <tr key={win.Id}>
-                                <td>{win.Datum}</td>
-                                <td>{win.Dragning}</td>
+                            <tr key={win.id}>
+                                <td>{win.datum}</td>
+                                <td>{win.dragning}</td>
                                 <td>{win["7-rätt-antal"]}</td>
                                 <td>{formatter.format(+win["7-rätt-vinst"])}</td>
                                 <td>{win["6-plus-antal"]}</td>
