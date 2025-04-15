@@ -3,13 +3,13 @@
     bottom: 0;
     left: 0;
     right: 0;
+    /* height: 100px; */
+    /* margin-top: 180px; */
     max-height: 70px;
     width:100%;
     font-size: small;
-    margin-top: 40px;
     width: 100vw;
     display: flex;
-    height: 100px;
     justify-content: center;
     align-items: center;
     height: auto;
@@ -18,11 +18,11 @@
     /* color: var(--fontColBtnBuy); */
 
     .leftSide {
-        padding-left: 20%;
-        color: white;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
+        padding-left: 15%;
+        color: white;
+        flex-wrap: wrap;
         margin: 1vw;
         padding-right: 10vw;
         width: 60vw;

@@ -1,8 +1,8 @@
 [
 {
-"Id":"1",
-"Datum": "2025-03-01",
-"Dragning": "Lotto 1",
+"id":"1",
+"datum": "2025-03-01",
+"dragning": "Lotto 1",
 "7-rätt-antal": "0",
 "7-rätt-vinst": "0",
 "6-plus-antal": "11",
@@ -11,9 +11,9 @@
 "6-rätt-vinst": "3310"
 },
 {
-"Id":"2",
-"Datum": "2025-03-01",
-"Dragning": "Lotto 2",
+"id":"2",
+"datum": "2025-03-01",
+"dragning": "Lotto 2",
 "7-rätt-antal": "1",
 "7-rätt-vinst": "1485065",
 "6-plus-antal": "14",
@@ -22,9 +22,9 @@
 "6-rätt-vinst": "3960"
 },
 {
-"Id":"3",
-"Datum": "2025-03-05",
-"Dragning": "Lotto 1",
+"id":"3",
+"datum": "2025-03-05",
+"dragning": "Lotto 1",
 "7-rätt-antal": "0",
 "7-rätt-vinst": "0",
 "6-plus-antal": "11",
@@ -33,9 +33,9 @@
 "6-rätt-vinst": "3310"
 },
 {
-"Id":"4",
-"Datum": "2025-03-05",
-"Dragning": "Lotto 2",
+"id":"4",
+"datum": "2025-03-05",
+"dragning": "Lotto 2",
 "7-rätt-antal": "0",
 "7-rätt-vinst": "0",
 "6-plus-antal": "7",
@@ -44,9 +44,9 @@
 "6-rätt-vinst": "3359"
 },
 {
-"Id":"5",
-"Datum": "2025-03-08",
-"Dragning": "Lotto 1",
+"id":"5",
+"datum": "2025-03-08",
+"dragning": "Lotto 1",
 "7-rätt-antal": "1",
 "7-rätt-vinst": "6300032",
 "6-plus-antal": "23",
@@ -55,9 +55,9 @@
 "6-rätt-vinst": "3383"
 },
 {
-"Id":"6",
-"Datum": "2025-03-08",
-"Dragning": "Lotto 2",
+"id":"6",
+"datum": "2025-03-08",
+"dragning": "Lotto 2",
 "7-rätt-antal": "1",
 "7-rätt-vinst": "1457471",
 "6-plus-antal": "9",
@@ -66,9 +66,9 @@
 "6-rätt-vinst": "3068"
 },
 {
-"Id":"7",
-"Datum": "2025-03-12",
-"Dragning": "Lotto 1",
+"id":"7",
+"datum": "2025-03-12",
+"dragning": "Lotto 1",
 "7-rätt-antal": "0",
 "7-rätt-vinst": "0",
 "6-plus-antal": "8",
@@ -77,9 +77,9 @@
 "6-rätt-vinst": "4256"
 },
 {
-"Id":"8",
-"Datum": "2025-03-12",
-"Dragning": "Lotto 2",
+"id":"8",
+"datum": "2025-03-12",
+"dragning": "Lotto 2",
 "7-rätt-antal": "0",
 "7-rätt-vinst": "0",
 "6-plus-antal": "7",
@@ -88,9 +88,9 @@
 "6-rätt-vinst": "1748"
 },
 {
-"Id":"9",
-"Datum": "2025-03-15",
-"Dragning": "Lotto 1",
+"id":"9",
+"datum": "2025-03-15",
+"dragning": "Lotto 1",
 "7-rätt-antal": "1",
 "7-rätt-vinst": "3068449",
 "6-plus-antal": "28",
@@ -99,9 +99,9 @@
 "6-rätt-vinst": "2532"
 },
 {
-"Id":"10",
-"Datum": "2025-03-15",
-"Dragning": "Lotto 2",
+"id":"10",
+"datum": "2025-03-15",
+"dragning": "Lotto 2",
 "7-rätt-antal": "2",
 "7-rätt-vinst": "716306",
 "6-plus-antal": "8",
@@ -110,9 +110,9 @@
 "6-rätt-vinst": "2486"
 },
 {
-"Id":"11",
-"Datum": "2025-03-19",
-"Dragning": "Lotto 1",
+"id":"11",
+"datum": "2025-03-19",
+"dragning": "Lotto 1",
 "7-rätt-antal": "0",
 "7-rätt-vinst": "0",
 "6-plus-antal": "8",
@@ -121,9 +121,9 @@
 "6-rätt-vinst": "2486"
 },
 {
-"Id":"12",
-"Datum": "2025-03-19",
-"Dragning": "Lotto 2",
+"id":"12",
+"datum": "2025-03-19",
+"dragning": "Lotto 2",
 "7-rätt-antal": "0",
 "7-rätt-vinst": "0",
 "6-plus-antal": "7",
@@ -132,9 +132,9 @@
 "6-rätt-vinst": "2355"
 },
 {
-"Id":"13",
-"Datum": "2025-03-22",
-"Dragning": "Lotto 1",
+"id":"13",
+"datum": "2025-03-22",
+"dragning": "Lotto 1",
 "7-rätt-antal": "2",
 "7-rätt-vinst": "1524350",
 "6-plus-antal": "15",
@@ -143,9 +143,9 @@
 "6-rätt-vinst": "3279"
 },
 {
-"Id":"14",
-"Datum": "2025-03-22",
-"Dragning": "Lotto 2",
+"id":"14",
+"datum": "2025-03-22",
+"dragning": "Lotto 2",
 "7-rätt-antal": "1",
 "7-rätt-vinst": "1416779",
 "6-plus-antal": "10",
@@ -154,9 +154,9 @@
 "6-rätt-vinst": "3413"
 },
 {
-"Id":"15",
-"Datum": "2025-03-26",
-"Dragning": "Lotto 1",
+"id":"15",
+"datum": "2025-03-26",
+"dragning": "Lotto 1",
 "7-rätt-antal": "1",
 "7-rätt-vinst": "1000000",
 "6-plus-antal": "3",
@@ -165,9 +165,9 @@
 "6-rätt-vinst": "3147"
 },
 {
-"Id":"16",
-"Datum": "2025-03-26",
-"Dragning": "Lotto 2",
+"id":"16",
+"datum": "2025-03-26",
+"dragning": "Lotto 2",
 "7-rätt-antal": "0",
 "7-rätt-vinst": "0",
 "6-plus-antal": "8",
@@ -176,9 +176,9 @@
 "6-rätt-vinst": "4699"
 },
 {
-"Id":"17",
-"Datum": "2025-03-29",
-"Dragning": "Lotto 1",
+"id":"17",
+"datum": "2025-03-29",
+"dragning": "Lotto 1",
 "7-rätt-antal": "1",
 "7-rätt-vinst": "2451865",
 "6-plus-antal": "13",
@@ -187,9 +187,9 @@
 "6-rätt-vinst": "2607"
 },
 {
-"Id":"18",
-"Datum": "2025-03-29",
-"Dragning": "Lotto 2",
+"id":"18",
+"datum": "2025-03-29",
+"dragning": "Lotto 2",
 "7-rätt-antal": "0",
 "7-rätt-vinst": "0",
 "6-plus-antal": "17",
@@ -199,9 +199,9 @@
 }
 ,
 {
-"Id":"19",
-"Datum": "2025-04-02",
-"Dragning": "Lotto 1",
+"id":"19",
+"datum": "2025-04-02",
+"dragning": "Lotto 1",
 "7-rätt-antal": "0",
 "7-rätt-vinst": "0",
 "6-plus-antal": "20",
@@ -210,9 +210,9 @@
 "6-rätt-vinst": "1791"
 },
 {
-"Id":"20",
-"Datum": "2025-04-02",
-"Dragning": "Lotto 2",
+"id":"20",
+"datum": "2025-04-02",
+"dragning": "Lotto 2",
 "7-rätt-antal": "2",
 "7-rätt-vinst": "500000",
 "6-plus-antal": "8",
@@ -222,9 +222,9 @@
 }
 ,
 {
-"Id":"21",
-"Datum": "2025-04-05",
-"Dragning": "Lotto 1",
+"id":"21",
+"datum": "2025-04-05",
+"dragning": "Lotto 1",
 "7-rätt-antal": "0",
 "7-rätt-vinst": "0",
 "6-plus-antal": "20",
@@ -233,9 +233,9 @@
 "6-rätt-vinst": "2913"
 },
 {
-"Id":"22",
-"Datum": "2025-04-05",
-"Dragning": "Lotto 2",
+"id":"22",
+"datum": "2025-04-05",
+"dragning": "Lotto 2",
 "7-rätt-antal": "2",
 "7-rätt-vinst": "731603",
 "6-plus-antal": "14",
@@ -244,9 +244,9 @@
 "6-rätt-vinst": "2251"
 },
 {
-"Id":"23",
-"Datum": "2025-04-09",
-"Dragning": "Lotto 1",
+"id":"23",
+"datum": "2025-04-09",
+"dragning": "Lotto 1",
 "7-rätt-antal": "0",
 "7-rätt-vinst": "0",
 "6-plus-antal": "3",
@@ -255,9 +255,9 @@
 "6-rätt-vinst": "3429"
 },
 {
-"Id":"24",
-"Datum": "2025-04-09",
-"Dragning": "Lotto 2",
+"id":"24",
+"datum": "2025-04-09",
+"dragning": "Lotto 2",
 "7-rätt-antal": "0",
 "7-rätt-vinst": "0",
 "6-plus-antal": "10",
@@ -266,9 +266,9 @@
 "6-rätt-vinst": "3848"
 },
 {
-"Id":"25",
-"Datum": "2025-04-12",
-"Dragning": "Lotto 1",
+"id":"25",
+"datum": "2025-04-12",
+"dragning": "Lotto 1",
 "7-rätt-antal": "0",
 "7-rätt-vinst": "0",
 "6-plus-antal": "14",
@@ -277,9 +277,9 @@
 "6-rätt-vinst": "2918"
 },
 {
-"Id":"26",
-"Datum": "2025-04-12",
-"Dragning": "Lotto 2",
+"id":"26",
+"datum": "2025-04-12",
+"dragning": "Lotto 2",
 "7-rätt-antal": "0",
 "7-rätt-vinst": "0",
 "6-plus-antal": "24",

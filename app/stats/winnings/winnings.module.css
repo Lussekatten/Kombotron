@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 5px;
-
+    height: auto;
+padding-bottom: 80px;
+padding-left: 5px;
     h1 {
         font-size: 1.3rem;
     }
@@ -16,7 +17,8 @@
     overflow-x: auto;
     border: 1px solid;
     border-collapse: collapse;
-    width: 100%;
+    /* width: 90vw; */
+    table-layout: auto;
 
     tr:nth-child(even) {
         background-color: #f2f2f2;
@@ -26,8 +28,9 @@
     td {
         font-family: 'Courier New', Courier, monospace;
         font-size: .9rem;
-        padding: 3px;
+        padding: 5px;
         text-align: left;
+        white-space: nowrap;
     }
 
     th {
@@ -37,6 +40,6 @@
 }
 
 .tablesAverage {
-    width: 20%;
-    table-layout: auto;
+    min-width: 20%;
+    max-width: 30%;
 }
