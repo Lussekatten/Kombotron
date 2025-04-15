@@ -1,0 +1,18 @@
+.allWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    li{
+        font-size: 0.9rem;
+    }
+}
