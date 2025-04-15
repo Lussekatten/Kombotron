@@ -38,8 +38,9 @@ const NumbersStatsPage: React.FC = () => {
 
 
     return (
-        <div className={styles.allWrapper}>
+        <>
             <StatsNavMenu />
+        <div className={styles.allWrapper}>
 
             <h1>Statistik för enskilda nummer</h1>
             <div>
@@ -62,12 +63,13 @@ const NumbersStatsPage: React.FC = () => {
             <ul>
                 <li>Närvaro-frekvens: Siffran {selectedOption} har kommit upp <b>{numberOneCount} ggr.</b> de senaste {stats.length} dragningarna.</li>
                 <li><b>Längsta frånvaro</b> period: <b>{maxAbsence}</b> dragningar.</li>
-                <li><b>Frånvaro</b>-mönstret de senaste 100 dragningarna: {absencePattern}</li>
+                <li><b>Frånvaro</b>-mönstret de senaste dragningarna: {absencePattern}</li>
             </ul>
             <div style={{ height: '510px' }}>
                 <BarChart dataString={Data} number={selectedOption} />
             </div>
         </div >
+        </>
     );
 }
 

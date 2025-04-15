@@ -108,13 +108,10 @@ export function getAbsencePatternForNumber(nr: string = '1'): string {
     let maxAbsenceCounter: number = 0;
     let currentAbsenceCounter: number = 0;
     let found: boolean = false;
-    let currentIndex: number = 0;
     let counterSkip: number = 0;
     let absencePattern : string = '';
 
     for (let i = 0; i < statsNumbers.length; i++) {
-        //Skip until 100 left
-        if (counterSkip >= i) {
             //Split string into array of numbers;
             let arr: Array<string> = statsNumbers[i].combination.split(',');
             //Detect if number 1 is in there
@@ -129,7 +126,6 @@ export function getAbsencePatternForNumber(nr: string = '1'): string {
                 //Check which one is bigger and update the max value if needed
                 if (maxAbsenceCounter < currentAbsenceCounter) {
                     maxAbsenceCounter = currentAbsenceCounter;
-                    currentIndex = i;
                 }
                 //Add the new absence period to the pattern
                 absencePattern +=currentAbsenceCounter;
@@ -140,12 +136,26 @@ export function getAbsencePatternForNumber(nr: string = '1'): string {
             else {
                 currentAbsenceCounter++;
             }
-        }
-        counterSkip++;
         //Save the last absence period as well
         if (i == statsNumbers.length -1) {
             absencePattern +=currentAbsenceCounter;
         }
     }
     return absencePattern;
+}
+
+export function getGroupingStats(): string[] {
+    let arr: Array<number> = [0, 0, 0];
+    let sumSeven: number = 0;
+    let winnersSeven: number = 0;
+    let counterSkip: number = 0;
+    let absencePattern : string = '';
+
+    for (let i = 0; i < statsNumbers.length; i++) {
+        //Skip until 100 left
+        if (counterSkip >= i) {
+        
+        }
+    }
+    return ["1,2"];
 }
