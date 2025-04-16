@@ -7,9 +7,12 @@
     justify-content: center;
     height: auto;
 
-    .myImg{
-        transform: rotate(20deg);
+    .myImg {
+        transform: rotate(15deg);
+        width: 36vw;
+        height: auto;
     }
+
     .main {
         display: flex;
         flex-direction: column;
@@ -63,20 +66,48 @@
     }
 
     .cards {
-        width: 30vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid salmon; */
         padding-left: 9vw;
+        width: 50vw;
         height: auto;
 
         .card {
             position: absolute;
-            width: 260px;
-            height: 415px;
+            margin-top: 450px;
+            width: clamp(200px, 40%, 260px);
+            height: auto;
+            min-height: 50%;
+            /* max-height: 100%; */
             border-radius: 8px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
             transform-origin: center 1000px;
-            transition: all 0.9s linear;
+            transition: all 0.5s linear;
 
         }
 
+    }
+}
+
+@media (min-width: 320px) {
+    .card {
+        /* border: 1px solid blue; */
+        margin-top: 250px;
+        width: clamp(200px, 40%, 260px);
+        height: auto;
+        /* max-width: 100%;
+        min-width: 60%; */
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        /* border: 1px solid orangered; */
+        margin-top: 450px;
+        max-width: 260px;
+        height: auto;
+        min-height: 50%;
     }
 }

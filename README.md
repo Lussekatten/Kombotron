@@ -109,4 +109,7 @@ it is calculated and added as the last number to the string array.
 1. Grouping functionality implemented. Strange that I could not trim properly the comma at the end.
 I tried in vain.
 2. Working with the animation on the starting page now (the animation bootcamp gave me some ideas).
-3. Done with the animation. Looks pretty cool if you ask me. :)
+3. Done with the animation. Looks pretty cool if you ask me. Not so responsive though. :)
+
+16-April-2025
+1. Added more responsiveness to starting page
