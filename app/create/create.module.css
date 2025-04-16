@@ -102,3 +102,24 @@
   .submitButton:active {
     background-color: #0044a3;
   }
+
+  .filtersSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .customInput {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .customInput:focus {
+    border-color: #0070f3;
+    outline: none;
+  }

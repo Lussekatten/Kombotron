@@ -118,3 +118,5 @@ I tried in vain.
 4. Added a Submit button with fake functionality (does nothing much at the moment)
 5. Added an alert message in case one of the otions are not selected
 6. Added functionality so that the 3 numbers are UNIQUE.
+7. Expanding the data input from the user to a full blown form, where we make a new sections, called "Filters" with a dropdown and in input field. The "Create system" button will collect all necessary data for processing.
+8. All data seems to be collected correctly. Remains to write the actual code for creating the smart system using this data.
