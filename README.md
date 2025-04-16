@@ -114,3 +114,7 @@ I tried in vain.
 16-April-2025
 1. Added more responsiveness to starting page
 2. Starting on system page. This will be the core page of the site. Creating a reduced/smart system is the key for future success.
+3. Added some instructions and 3 dropdowns on the page
+4. Added a Submit button with fake functionality (does nothing much at the moment)
+5. Added an alert message in case one of the otions are not selected
+6. Added functionality so that the 3 numbers are UNIQUE.
