@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <div>
+      <div className="balls">
         <Image className={styles.myImg}
           src="/bollar_01.png"
           alt="numbered balls"
