@@ -196,8 +196,7 @@
 "6-plus-vinst": "30427",
 "6-rätt-antal": "100",
 "6-rätt-vinst": "3017"
-}
-,
+},
 {
 "id":"19",
 "datum": "2025-04-02",
@@ -219,8 +218,7 @@
 "6-plus-vinst": "29980",
 "6-rätt-antal": "71",
 "6-rätt-vinst": "1970"
-}
-,
+},
 {
 "id":"21",
 "datum": "2025-04-05",
@@ -286,5 +284,27 @@
 "6-plus-vinst": "21193",
 "6-rätt-antal": "141",
 "6-rätt-vinst": "2104"
+},
+{
+"id":"27",
+"datum": "2025-04-16",
+"dragning": "Lotto 1",
+"7-rätt-antal": "0",
+"7-rätt-vinst": "0",
+"6-plus-antal": "5",
+"6-plus-vinst": "53409",
+"6-rätt-antal": "23",
+"6-rätt-vinst": "4868"
+},
+{
+"id":"28",
+"datum": "2025-04-16",
+"dragning": "Lotto 2",
+"7-rätt-antal": "0",
+"7-rätt-vinst": "0",
+"6-plus-antal": "9",
+"6-plus-vinst": "26983",
+"6-rätt-antal": "54",
+"6-rätt-vinst": "2623"
 }
 ]

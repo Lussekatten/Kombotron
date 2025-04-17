@@ -1,6 +1,6 @@
 import { StatsNavMenu } from "@/app/components/navbar/menus";
 import stats from '@/data/underlag-utdelningar.json';
-import styles from "./winnings.module.css"
+import styles from "./winnings.module.css";
 import getAverageStats from "@/app/actions";
 
 export default function WinningsStatsPage() {

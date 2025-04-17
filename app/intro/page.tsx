@@ -45,15 +45,19 @@ export default function IntroPage() {
                     som är organiserade på så sätt, att ifall alla filter valdes korrekt, garanterar en minsta vinst på 5 korrekta siffror av 7,
                     oavsett.</p>
                 <h2>Vad är en "spik" och hur viktigt är det att använda dem?</h2>
-                <p>Spikar kallar vi de siffror som förekommer i varje kombination som skapas. Det är din uppgifgt att välja dessa siffror.
-                    Genom att använda dem miskar antalet återstående möjliga kombinationer avsevärt.</p>
+                <p>Spikar kallar vi de siffror som förekommer i varje kombination som skapas i det smarta systemet. 
+                    Det är din uppgifgt att välja dessa siffror.
+                    Genom att använda spikar, miskar antalet återstående möjliga kombinationer avsevärt.</p>
                 <ul>
                     <li>Om man väljer en enda "spik-siffra" minskar antalet återstående kombintioner från 6.724.520 st. till 1.344.904 st.</li>
-                    <li>Om man väljer en andra "spik-siffra" minskar antalet återstående kombintioner från 1.344.904 st. till 237.336 st.</li>
-                    <li>Om man väljer en tredje "spik-siffra" minskar antalet återstående kombintioner från 237.336 st. till 35.960 st.</li>
+                    <li>Om man väljer två "spik-siffror" minskar antalet återstående kombintioner från 1.344.904 st. till 237.336 st.</li>
+                    <li>Om man väljer hela tre "spik-siffror" minskar antalet återstående kombintioner från 237.336 st. till 35.960 st.</li>
                 </ul>
-                <p>Så det är VÄLDIGT viktigt att hitta dessa 3 siffror. Återigen, kan statistiken vara användbar när man väljer dessa
-                    "spikar" inför nästa dragning.</p>
+                <p>Så det är VÄLDIGT viktigt att hitta dessa 3 siffror.
+                    Våra smarta/reducerade system bygger just på dessa förutsättningar. Det blir svårt, om inte omöjligt, att erbjuda
+                    ett bra lotto system, om man startar med en alltför stor mängd återstående kombinationer. 
+                    Så använd statistiken väl när du väljer dessa "spikar" inför nästa dragning.<br/><br/>
+                    Sist men inte minst, ett stort <b>Lycka till!</b></p>
             </div>
         </main>
     );

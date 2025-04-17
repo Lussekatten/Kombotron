@@ -65,7 +65,8 @@ export default function StatsPage() {
                     <p>När du bygger system med hjälp av vår sajt, gör så här:<br />
                         1. Välj 3 olika siffror som du vill ha med i alla dina kombinationer.<br />
                         2. Kör med storlek 2 på grupperingar.<br />
-                        3. Ett system på 35-45 rader kommer att byggas upp som garanterar dig minst 1 rad med 5-rätt, men oftast blir det fler.
+                        3. Välj vilka siffror som inte ska vara med (max. 6 st, komma separerade)<br />
+                        4. Klicka på "Skapa system"-knappen. Ett system på 35-45 rader kommer att byggas upp som garanterar dig minst 1 rad med 5-rätt (men oftast blir det fler).
                     </p>
                 </div>
             </main>
