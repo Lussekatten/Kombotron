@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 const generateOptions = (usedValues: number[], currentValue: number | "") => {
   const options = [];
-  for (let i = 1; i <= 10; i++) {
+  for (let i = 1; i <= 35; i++) {
     const disabled = usedValues.includes(i) && i !== currentValue;
     options.push(
       <option key={i} value={i} disabled={disabled}>
@@ -66,7 +66,7 @@ return (
     <form className={styles.dropdownCard} onSubmit={handleSubmit}>
       {/* Section 1: Three Dropdowns */}
       <div className={styles.dropdownContainer}>
-        {["Välj första", "Välj andra", "Välj tredje"].map((label, index) => (
+        {["Välj 1:a", "Välj 2:a", "Välj 3:e"].map((label, index) => (
           <div className={styles.selectWrapper} key={index}>
             <label htmlFor={`dropdown-${index}`}>{label} "spik"-siffran</label>
             <select

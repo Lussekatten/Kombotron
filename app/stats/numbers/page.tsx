@@ -41,23 +41,26 @@ const NumbersStatsPage: React.FC = () => {
         <>
             <StatsNavMenu />
             <div className={styles.allWrapper}>
-
-                <h1>Statistik för enskilda nummer</h1>
                 <div>
-                    <label htmlFor="NumberSelector">Välj ett nummer:</label>
-                    <select id='NumberSelector' name='NumberSelector'
-                        value={selectedOption}
-                        onChange={(e) => setSelectedOption(e.target.value)}
-                    >
-                        {Array.from({ length: 35 }, (_, i) => {
-                            const value = (i + 1).toString();
-                            return (
-                                <option key={value} value={value}>
-                                    {value}
-                                </option>
-                            );
-                        })}
-                    </select>
+                    <h1>Statistik för enskilda nummer</h1>
+                </div>
+                <div className={styles.dropdownContainer}>
+                    <div className={styles.selectWrapper}>
+                        <label htmlFor="NumberSelector">Välj ett nummer:</label>
+                        <select className={styles.customSelect} id='NumberSelector' name='NumberSelector'
+                            value={selectedOption}
+                            onChange={(e) => setSelectedOption(e.target.value)}
+                        >
+                            {Array.from({ length: 35 }, (_, i) => {
+                                const value = (i + 1).toString();
+                                return (
+                                    <option key={value} value={value}>
+                                        {value}
+                                    </option>
+                                );
+                            })}
+                        </select>
+                    </div>
                 </div>
                 <h2>Statistik för nummer {selectedOption}</h2>
                 <ul>
