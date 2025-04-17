@@ -125,4 +125,5 @@ I tried in vain.
 1. Added same style for all form elements, on all pages.
 2. Adjusted and styled some more. Button color, centered contents of the grouping stats page.
 3. Added more text to intro page. Changed the text and font of dropdowns.
+4. Changed the text of some instructions a bit, for clarity.
 
