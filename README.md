@@ -127,4 +127,6 @@ I tried in vain.
 3. Added more text to intro page. Changed the text and font of dropdowns.
 4. Changed the text of some instructions a bit, for clarity.
 5. Updated the JSON-files with the latest lottery data.
+6. After updating the JSON files, I got this weird message that "Module should match the data in "filename". After testing I found that I need to restart my application, so that the "new" JSON files are "processed".
+7. Added some color variables to the globals.css file so I can reuse throughout the application. I changed the affected modules to use these variables.
 

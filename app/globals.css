@@ -1,6 +1,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --btn-create-bg: #2063af;
+  --btn-create-bg-hover: #082a50;
+  --container-bg: #dbe8e9;
 }
 
 html,
