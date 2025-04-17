@@ -34,14 +34,14 @@ export default function IntroPage() {
                     att det är exakt samma chans till vinst för varje rad som lämnas in. Jag ska illustrera med ett
                     exempel vad jag menar.<br />
                     Två lotto-entusiaster (vi kallar dem spelare-A och spelare-B) spelar på lotto varje vecka.
-                    Spelare-A vet har ingen strategi när hen spelar, medan spelare-B använder sig av vår tjänst och "smarta system".
+                    Spelare-A har ingen uttalad strategi när hen spelar, medan spelare-B använder sig av vår tjänst och "smarta system".
                     Spelare-A lämnar in varje vecka följande kombinationer: 1-2-3-4-5-6-7, 2-3-4-5-6-7-8, 3-4-5-6-7-8-9, osv,
                     totalt 29 kombinationer (den sista är 29-30-31-32-33-34-35)<br />
                     Spelare-B vet dock (genom att kolla på statistiken på vår sajt) att sannolikheten för att alla siffror ska vara
                     konsekutiva (dvs. i följd) är minimal. Detta har inträffat ungefär 1 gång på 6.000 dragningar.
                     Därför, använder Spelare-B olika "filter" (du hittar dessa under menyfliken "Skapa system") som minimerar antalet
                     möjliga kombinationer allt eftersom de aktiveras. När spelare-B blivit klar med att filtera bort oönskade kombinationer,
-                    gör hen sedan ett reducerat system av återstående kombinationer. Resultatet blir ett antal kombinationer (20-55 st.),
+                    gör hen sedan ett reducerat system av återstående kombinationer. Resultatet blir ett antal kombinationer (35-45 st.),
                     som är organiserade på så sätt, att ifall alla filter valdes korrekt, garanterar en minsta vinst på 5 korrekta siffror av 7,
                     oavsett.</p>
                 <h2>Vad är en "spik" och hur viktigt är det att använda dem?</h2>

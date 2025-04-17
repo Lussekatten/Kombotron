@@ -39,7 +39,7 @@ export default function StatsPage() {
                             och den mest frekventa, nr. 26 (221 ggr). På sikt (flera år), kommer även siffran 1 att "komma ikapp", det är jag övertygad om.
                             Problemet är att ingen vet exakt när och på viket sätt detta kommer att ske.<br />
                             <b>Tolkning av staplarna</b> - För att underlätta visualiseringen har jag presenterat datan som en
-                            stapeldiagram. Diagramet visar frånvaroperioder for alla dessa 35 nummer.
+                            stapeldiagram. Diagramet visar <b>frånvaroperioder</b> for alla dessa 35 nummer.
                             Varje stapel i diagramet visar längden på frånvaron, dvs. hur många dragningar det har varit sedan respektive siffran
                             dykt upp senast. Om stapeln har längden noll (det ser man både här och där), betyder det att siffran dykt upp 2 ggr.
                             på raken. Ett större gap, på t.ex. två staplar, betyder att siffran kommit upp tre gånger i följd.
