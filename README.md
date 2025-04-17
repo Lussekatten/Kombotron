@@ -126,4 +126,5 @@ I tried in vain.
 2. Adjusted and styled some more. Button color, centered contents of the grouping stats page.
 3. Added more text to intro page. Changed the text and font of dropdowns.
 4. Changed the text of some instructions a bit, for clarity.
+5. Updated the JSON-files with the latest lottery data.
 
