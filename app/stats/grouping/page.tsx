@@ -20,7 +20,7 @@ export default function GroupingStatsPage() {
                             <tr>
                                 <th>Datum</th>
                                 <th>L1/L2</th>
-                                <th>Kombiantion</th>
+                                <th>Kombination</th>
                                 <th>Nummergrupp(er)</th>
                             </tr>
                         </thead>
