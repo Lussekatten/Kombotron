@@ -11,7 +11,6 @@ export default function WinningsStatsPage() {
     });
     return (
         <>
-            <StatsNavMenu />
             <div className={styles.tblResp}>
                 <h1>Vinststatistik för 2025 (senaste dragningar)</h1>
                 <table className={styles.tablesMain}>

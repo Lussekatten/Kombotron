@@ -39,7 +39,6 @@ const NumbersStatsPage: React.FC = () => {
 
     return (
         <>
-            <StatsNavMenu />
             <div className={styles.allWrapper}>
                 <div>
                     <h1>Statistik för enskilda nummer</h1>

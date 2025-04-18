@@ -132,3 +132,5 @@ I tried in vain.
 8. Testing pull request
 9. Changed some text (explaining better some of the concepts).
 
+17-April-2025
+1. After a heated debate with chatGPT, we both agreed upon some common ground. The result is a functional, responsive menu system implemented with accessibility in mind. Well, not all aspects of accessibility, but some (i.e. hover effects with changing colors and animations).
