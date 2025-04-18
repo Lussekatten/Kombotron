@@ -9,7 +9,6 @@ export default function GroupingStatsPage() {
 
     return (
         <>
-            <StatsNavMenu />
             <div className={styles.allWrapper}>
                 <div>
                     <h1>Statistik för grupperingar (de sista 20 dragningarna)</h1>

@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TopNavMenu from "./components/navbar/menus";
 import Footer from "./components/footer/footer";
+import NavMenu from "./components/navmenu/NavMenu";
 
 export const metadata: Metadata = {
   title: "Kombotron",
@@ -17,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <TopNavMenu />
+        <NavMenu />
         {children}
         <Footer/>
       </body>

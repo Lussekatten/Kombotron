@@ -10,10 +10,9 @@ const roboto = Roboto({
 export default function StatsPage() {
     return (
         <>
-            <StatsNavMenu />
             <main className={styles.allWrapper}>
                 <div className={styles.infoContents}>
-                    <h1 className={`${roboto.variable}`}>Statistik sidan</h1>
+                    <h1 className={`${roboto.variable}`}>Om statistiken</h1>
                     <h2>Syfte</h2>
                     <p>Denna sajt erbjuder statistisk data för att hjälpa dig (användaren) att maximera dina chanser till vinst genom
                         att välja vissa siffror inför nästa lottodragning. Det är upp till dig att bilda en egen uppfattning om hur pass
