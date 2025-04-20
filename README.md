@@ -134,3 +134,5 @@ I tried in vain.
 
 17-April-2025
 1. After a heated debate with chatGPT, we both agreed upon some common ground. The result is a functional, responsive menu system implemented with accessibility in mind. Well, not all aspects of accessibility, but some (i.e. hover effects with changing colors and animations).
+2. Fixed a bug related to the burger menu not closing after a menu selection was made.
+3. I optimized the width of the dropdown container for smaller screens.

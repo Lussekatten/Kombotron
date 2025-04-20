@@ -6,6 +6,9 @@ import styles from './NavMenu.module.css';
 
 export default function NavMenu() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const handleLinkClick = () => {
+        setMenuOpen(false);
+    };
 
     return (
         <nav className={styles.navbar}>
@@ -18,20 +21,20 @@ export default function NavMenu() {
             </button>
 
             <ul className={`${styles.navLinks} ${menuOpen ? styles.active : ''}`}>
-                <li><Link href="/">Hem</Link></li>
-                <li><Link href="/intro">Introduktion</Link></li>
+                <li><Link href="/" onClick={handleLinkClick}>Hem</Link></li>
+                <li><Link href="/intro" onClick={handleLinkClick}>Introduktion</Link></li>
 
                 <li className={styles.hasSubmenu}>
                     <span>Statistik</span>
                     <ul className={styles.submenu}>
-                        <li><Link href="/stats">Om statistiken</Link></li>
-                        <li><Link href="/stats/numbers">Enskilda nummer</Link></li>
-                        <li><Link href="/stats/grouping">Grupperingar</Link></li>
-                        <li><Link href="/stats/winnings">Vinster</Link></li>
+                        <li><Link href="/stats" onClick={handleLinkClick}>Om statistiken</Link></li>
+                        <li><Link href="/stats/numbers" onClick={handleLinkClick}>Enskilda nummer</Link></li>
+                        <li><Link href="/stats/grouping" onClick={handleLinkClick}>Grupperingar</Link></li>
+                        <li><Link href="/stats/winnings" onClick={handleLinkClick}>Vinster</Link></li>
                     </ul>
                 </li>
-                <li><Link href="/create">Skapa system</Link></li>
-                <li><Link href="/favorites">Dina system</Link></li>
+                <li><Link href="/create" onClick={handleLinkClick}>Skapa system</Link></li>
+                <li><Link href="/favorites" onClick={handleLinkClick}>Dina system</Link></li>
             </ul>
         </nav>
     );
