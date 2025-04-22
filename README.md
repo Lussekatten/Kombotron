@@ -35,9 +35,32 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
----- Upgrades history ---
+
+------------------------------ Testing the project ------------------------
+This project is divided in two main sections:
+- the stats section, which provides information about patterns found in the lottery.
+- the system section, where the user can produce a reduced/smart system.
+
+The system section has not been fully implemented yet, and as such, the smart system is not produced. However, these features of the sysetm section can be tested:
+- once you have selected a "spike" number, you can not select the same number in the remaining dropdowns.
+- you must select all three spikes, in order to proceed (click on the "Skapa system" button to test).
+
+Other things you can test:
+1. Responsiveness. The application has been designed with responsiveness in mind, although the best experience will be on desktop screen sizes, where all the table data from winnings can be viewed on a single page, without scrolling. The breakpoint for smaller screens is at 780 pixels, where the burger menu appears. Clicking on the burger icon toggles the menu on and off. For readability reasons, I prevented the table data to wrap, when the screen size is getting smaller.
+2. Accessibility. The site is also somewhat accessible for people using screen readers:
+- hovering over a menu option inverts the colors and creates a small animation, scaling up the font size for a short time.
+- when using the tab key to go through the site menus, a border appears around the active menu/link. Note: The "Statistik" menu is skipped for some reason. I need to address that issue. 
+
+Other information:
+I will continue to develop this project until completed, with a full range of stats, system creation, log-in functiolality and deployment on Vercel. But it will happen in a "private" setting.
+
+I also want to extend a genuine "Thank you", to my two teachers, Robert and Maja Gedda, who allowed me to start on this project. It bugged me for many years, not being able to have the proper interface to my "thoughts about random patterns in the swedish lottery".
+-----------------------------------------------------------------------------------------------
+
+---- Project diary ---
 01-April-2025
-Added two keys to the .env.local file (related to the uploadthing module/library)
+Added two keys to the .env.local file (related to the uploadthing module/library).
+(I did not use it though. Not yet, anyway.)
 
 03-April-2025
 1. Routes created
@@ -132,5 +155,7 @@ I tried in vain.
 8. Testing pull request
 9. Changed some text (explaining better some of the concepts).
 
-17-April-2025
+18-April-2025
 1. After a heated debate with chatGPT, we both agreed upon some common ground. The result is a functional, responsive menu system implemented with accessibility in mind. Well, not all aspects of accessibility, but some (i.e. hover effects with changing colors and animations).
+2. Fixed a bug related to the burger menu not closing after a menu selection was made.
+3. I optimized the width of the dropdown container for smaller screens.
