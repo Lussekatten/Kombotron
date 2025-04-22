@@ -54,7 +54,7 @@ Other things you can test:
 Other information:
 I will continue to develop this project until completed, with a full range of stats, system creation, log-in functiolality and deployment on Vercel. But it will happen in a "private" setting.
 
-I also want to extend a genuine "Thank you", to my two teachers, Robert and Maja Gedda, who allowed me to start on this project. It bugged me for many years, not being able to have the proper interface to my "thoughts about random patterns in the swedish lottery".
+I also want to extend a genuine "Thank you", to my two teachers, Robert Hedblad and Maja Gedda, who allowed me to start on this project. It bugged me for many years, not being able to have the proper interface to my "thoughts about random patterns in the swedish lottery".
 -----------------------------------------------------------------------------------------------
 
 ---- Project diary ---
